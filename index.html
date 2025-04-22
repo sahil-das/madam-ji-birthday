@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Madam Ji</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(180deg, #10002b 0%, #240046 50%, #3c096c 100%);
+      color: #fff;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      position: relative;
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: url('https://i.imgur.com/3eO3gkU.jpg') no-repeat center center/cover;
+      position: relative;
+      z-index: 1;
+      animation: bgFade 12s infinite alternate;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: -1;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4.5rem;
+      color: #fddde6;
+      animation: glow 3s ease-in-out infinite alternate, fadeInUp 2s ease-out forwards;
+    }
+    h2 {
+      margin-top: 20px;
+      font-weight: 300;
+      font-size: 1.7rem;
+      animation: fadeIn 4s ease-out forwards;
+    }
+    section {
+      padding: 80px 20px;
+      text-align: center;
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(10px);
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery img {
+      width: 250px;
+      height: 330px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(255,255,255,0.3);
+      transition: transform 0.5s ease, filter 0.5s;
+      filter: brightness(0.85) saturate(1.2);
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+      filter: brightness(1) saturate(1.5);
+    }
+    .message {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.4rem;
+      line-height: 2.1;
+      font-style: italic;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 40px;
+      animation: fadeIn 3s ease-out;
+      box-shadow: 0 8px 30px rgba(255,255,255,0.05);
+    }
+    footer {
+      padding: 30px;
+      text-align: center;
+      font-size: 1rem;
+      color: #aaa;
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ffb6f2, 0 0 20px #ffb6f2, 0 0 30px #ffb6f2; }
+      to { text-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffb6f2; }
+    }
+    @keyframes bgFade {
+      0% { filter: brightness(1); }
+      100% { filter: brightness(0.85); }
+    }
+    .falling-symbol {
+      position: fixed;
+      top: -20px;
+      width: 20px;
+      height: 20px;
+      background: url('https://cdn-icons-png.flaticon.com/512/833/833473.png') no-repeat center center/contain;
+      animation: fall linear infinite;
+      pointer-events: none;
+      opacity: 0.8;
+      z-index: 999;
+    }
+    @keyframes fall {
+      0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(120vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop controls style="display:none">
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
+  </audio>
+
+  <header>
+    <h1>Happy Birthday Madam Ji ✨</h1>
+    <h2>You are the magic in my stars...</h2>
+  </header>
+
+  <section>
+    <h2>Moments That Shine Like You ✨</h2>
+    <div class="gallery">
+      <img src="https://placekitten.com/250/300" alt="Placeholder 1">
+      <img src="https://placekitten.com/251/300" alt="Placeholder 2">
+      <img src="https://placekitten.com/252/300" alt="Placeholder 3">
+      <img src="https://placekitten.com/253/300" alt="Placeholder 4">
+    </div>
+  </section>
+
+  <section>
+    <h2>My Message To You 💖</h2>
+    <div class="message">
+      To the one I admire the most, Madam Ji,<br><br>
+      Happy Birthday to the woman whose presence brings peace to my chaos, whose smile lights up the dullest days, and whose kindness touches every soul around her.<br><br>
+      On this special day, I want to thank you — not just for being in my life, but for being *you*.<br><br>
+      You are a beautiful blend of strength and grace, of intelligence and compassion. Every moment with you feels like a gift, and today, I just wish I could give you a fraction of the happiness you bring to others.<br><br>
+      May your life always be filled with love, success, laughter, and calm. You truly deserve the very best in this world.<br><br>
+      With the deepest respect and all my affection,<br>
+      <strong>— Yours, always</strong>
+    </div>
+  </section>
+
+  <footer>
+    Made with ❤️ for Madam Ji — A Night to Remember
+  </footer>
+
+  <!-- Confetti JS -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    function popConfetti() {
+      confetti({
+        particleCount: 200,
+        spread: 120,
+        origin: { y: 0.6 },
+        colors: ['#ffb6f2', '#ffffff', '#e0b3ff']
+      });
+    }
+    setTimeout(popConfetti, 1000);
+    document.body.addEventListener('click', popConfetti);
+
+    // Falling stars and hearts
+    function createFallingSymbols() {
+      const symbol = document.createElement('div');
+      symbol.classList.add('falling-symbol');
+      symbol.style.left = Math.random() * window.innerWidth + 'px';
+      symbol.style.animationDuration = 3 + Math.random() * 5 + 's';
+      document.body.appendChild(symbol);
+      setTimeout(() => symbol.remove(), 8000);
+    }
+    setInterval(createFallingSymbols, 500);
+  </script>
+</body>
+</html>
